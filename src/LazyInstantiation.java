@@ -6,7 +6,6 @@ public class LazyInstantiation {
     {
         if (Taoiseach == null)
             Taoiseach = new LazyInstantiation();
-
         return Taoiseach;
     }
     public void setnumber(int n){
@@ -15,6 +14,8 @@ public class LazyInstantiation {
     public int getNumber(){
         return number;
     }
+
+
 
 
 
