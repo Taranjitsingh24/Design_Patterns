@@ -16,4 +16,10 @@ public class DoubleCheckedLocking {
         return Taoiseach;
 
     }
+    public void setnumber(int n){
+        this.number = n;
+    }
+    public int getNumber(){
+        return number;
+    }
 }
