@@ -1,5 +1,5 @@
 public enum Enum_Singleton {
-    Taoiseach;
+    TAOISEACH;
     int number = 0;
     public void setnumber(int n){
         this.number = n;
