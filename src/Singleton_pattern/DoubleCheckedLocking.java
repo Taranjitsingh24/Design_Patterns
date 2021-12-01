@@ -1,3 +1,5 @@
+package Singleton_pattern;
+
 public class DoubleCheckedLocking {
     private static volatile DoubleCheckedLocking Taoiseach = null;
     private int number = 0;

@@ -1,3 +1,5 @@
+package Singleton_pattern;
+
 import jdk.swing.interop.SwingInterOpUtils;
 
 public class Taoiseach_Check{

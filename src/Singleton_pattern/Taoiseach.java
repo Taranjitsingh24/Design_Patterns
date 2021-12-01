@@ -1,3 +1,5 @@
+package Singleton_pattern;
+
 public class Taoiseach{
 
     private int number_of_Taoiseach;
