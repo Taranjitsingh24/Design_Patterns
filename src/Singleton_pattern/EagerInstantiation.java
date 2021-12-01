@@ -1,3 +1,5 @@
+package Singleton_pattern;
+
 public class EagerInstantiation {
     private static final EagerInstantiation Taoiseach = new EagerInstantiation() ;
     private int number = 0;

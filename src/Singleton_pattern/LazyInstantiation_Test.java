@@ -1,3 +1,5 @@
+package Singleton_pattern;
+
 public class LazyInstantiation_Test {
     public static void main(String[] args) {
 

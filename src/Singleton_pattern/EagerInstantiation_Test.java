@@ -1,3 +1,5 @@
+package Singleton_pattern;
+
 public class EagerInstantiation_Test {
 
     public static void main(String[] args) {
