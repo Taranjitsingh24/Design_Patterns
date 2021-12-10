@@ -6,7 +6,7 @@ public class MaleJacket_Decorator extends ClothingDecorator{
     }
 
     public String getDescription() {
-        return decoratedStyle.getDescription() + " \nMale Jacket" ;
+        return decoratedStyle.getDescription() + " \nMale Jacket: €300" ;
     }
 
     // no change in the functionality

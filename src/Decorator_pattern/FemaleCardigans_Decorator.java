@@ -8,7 +8,7 @@ public class FemaleCardigans_Decorator extends ClothingDecorator{
     }
 
     public String getDescription() {
-        return decoratedStyle.getDescription() + " \n Female Cardigan" ;
+        return decoratedStyle.getDescription() + " \n Female Cardigan: €300" ;
     }
 
     // no change in the functionality
