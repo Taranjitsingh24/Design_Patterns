@@ -1,5 +1,6 @@
 package Factory_pattern;
 
+
 public abstract class Laptop {
 
     private laptopType type;
@@ -7,7 +8,7 @@ public abstract class Laptop {
     public Laptop(laptopType type){
         this.type = type;
 
-        
+
 
     }
     protected abstract void construct();
