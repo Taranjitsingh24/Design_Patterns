@@ -9,4 +9,6 @@ public class Player2 extends IrishCricketTeam{
     public void display() {
         System.out.println("Player02");
     }
+
+
 }
