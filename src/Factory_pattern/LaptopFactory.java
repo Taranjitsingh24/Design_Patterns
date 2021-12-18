@@ -7,6 +7,9 @@ public class LaptopFactory {
                 case WINDOW:
                     laptop = new WindowType();
                     break;
+                case APPLE:
+                    laptop = new WindowType();
+                    break;
                 default:
                     break;
             }

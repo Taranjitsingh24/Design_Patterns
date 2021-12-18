@@ -1,8 +1,9 @@
 package Factory_pattern;
 public class WindowType extends Laptop {
 
-    public WindowType(laptopType type) {
-        super(type);
+    WindowType(){
+        super(LaptopType.WINDOW);
+        construct();
     }
 
     @Override
