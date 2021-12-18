@@ -3,22 +3,27 @@ package Factory_pattern;
 
 public abstract class Laptop {
 
-    private laptopType type;
+    private LaptopType type;
 
-    public Laptop(laptopType type){
+    public Laptop(LaptopType type){
         this.type = type;
 
 
 
     }
+
+    public Laptop() {
+
+    }
+
     protected abstract void construct();
 
-    public void setType(laptopType type){
+    public void setType(LaptopType type){
         this.type = type;
 
     }
 
-    public laptopType getType() {
+    public LaptopType getType() {
         return type;
     }
 }
