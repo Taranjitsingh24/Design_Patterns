@@ -1,0 +1,16 @@
+@startuml
+skinparam classAttributeIconSize 0
+enum  Enum_Singleton{
+ TAOISEACH
+ +number:int
+ +setNumber():void
+ +getNumber():number
+
+}
+
+
+
+
+
+
+@enduml

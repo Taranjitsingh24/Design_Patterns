@@ -1,0 +1,53 @@
+@startuml
+skinparam classAttributeIconSize 0
+abstract IrishCricketTeam{
++Bowler :bowler
++Batsman: batsman
++bowl()
++bat()
++void display()
+}
+interface Bowler{
++bowl():void
+}
+interface Batsman{
++bat():void
+}
+class SpinBowler{
++bowl():void
+}
+class FastBowler{
++bowl():void
+}
+class MiddleOrderBatsman{
++bat():void
+}
+class TopOrderBatsman{
++bat():void
+}
+class Player1{
+display():void
+}
+class Player2{
+display():void
+}
+
+
+Bowler<|..SpinBowler
+Bowler<|.. FastBowler
+Batsman<|.. MiddleOrderBatsman
+Batsman<|.. TopOrderBatsman
+IrishCricketTeam o-- Batsman
+IrishCricketTeam o-- Bowler
+IrishCricketTeam<|-- Player1
+IrishCricketTeam<|-- Player2
+
+
+
+
+
+
+
+
+
+@enduml

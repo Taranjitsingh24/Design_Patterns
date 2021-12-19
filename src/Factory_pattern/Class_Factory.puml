@@ -1,0 +1,44 @@
+@startuml
+skinparam classAttributeIconSize 0
+enum LaptopType{
+
++WINDOW:LaptopType
++APPLE:LaptopType
+
+}
+Abstract Laptop {
+    + setType(LaptopType type): void
+    + getType(): LaptopType
+    #construct(): void
+}
+
+class WindowType{
+   ~ WindowType()
+   #construct(): void
+}
+class AppleType{
+   ~ AppleType()
+   #construct(): void
+}
+
+class LaptopFactory{
++buildLaptop(LaptopType model):Laptop
+}
+
+
+
+
+
+
+Laptop<|-- WindowType
+Laptop<|-- AppleType
+LaptopFactory<|.. Laptop
+LaptopType<-- Laptop
+
+
+
+
+
+
+
+@enduml

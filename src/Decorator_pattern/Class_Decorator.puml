@@ -1,0 +1,51 @@
+@startuml
+skinparam classAttributeIconSize 0
+interface Clothing{
++getDescription():String
++getTotalPrice():double
+}
+class MaleClothing{
++getDescription():String
++getTotalPrice():double
+}
+class FemaleClothing{
++getDescription():String
++getTotalPrice():double
+}
+abstract ClothingDecorator{
+~decoratedStyle
++ClothingDecorator():decoratedStyle
+}
+class FemaleCardigans_Decorator{
++ClothingDecorator():decoratedStyle
++getDescription():String
++getTotalPrice():double
+}
+class MaleJacket_Decorator{
++ClothingDecorator():decoratedStyle
++getDescription():String
++getTotalPrice():double
+}
+class Socks_Decorator{
++ClothingDecorator():decoratedStyle
++getDescription():String
++getTotalPrice():double
+}
+
+
+Clothing<|.. MaleClothing
+Clothing<|.. FemaleClothing
+Clothing<|.. ClothingDecorator
+ClothingDecorator o--- Clothing
+ClothingDecorator<|.. FemaleCardigans_Decorator
+ClothingDecorator<|.. MaleJacket_Decorator
+ClothingDecorator<|.. Socks_Decorator
+
+
+
+
+
+
+
+
+@enduml
